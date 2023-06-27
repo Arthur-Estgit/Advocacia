@@ -1,3 +1,8 @@
+a {
+  text-decoration: none;
+  color: #FAFAFA;
+}
+
 .nav-bar {
   display: flex;
   align-items: center;
@@ -33,11 +38,12 @@
 
 .carousel-section {
   width: 100%;
+  height: 100%;
 }
 
 .carousel-cell {
   width: 100%;
-  height: 350px;
+  height: 450px;
   box-shadow: inset 0 0 15px #000;
 }
 
@@ -54,7 +60,7 @@
 }
 
 .carousel-cell h2 {
-  margin-top: 5rem;
+  margin-top: 6.5rem;
   font-size: 36px;
   font-style: italic;
   color: #FAFAFA;
@@ -117,7 +123,16 @@
   background: #1F2C38;
   color: #FAFAFA;
   padding-bottom: 2rem;
-  box-shadow: inset 0 -5px 20px #000;
+  /* box-shadow: inset 0 -5px 20px #000; */
+}
+
+.sobre-section span {
+  content: '';
+  display: inline-block;
+  background: #FAFAFA;
+  height: 1.6px;
+  width: 92%;
+  margin-top: 1rem;
 }
 
 .sobre-info {
@@ -133,6 +148,7 @@
  display: flex;
  justify-content: center;
  align-items: center;
+ margin-bottom: 2rem;
 }
 
 .sobre-info h2::before {
@@ -158,4 +174,101 @@
   margin-bottom: 1rem;
   margin-inline: 2rem;
   font-size: 15px;
+}
+
+
+.areas-section {
+  display: flex;
+  flex-direction: column;
+  padding-top: 2.5rem;
+  background: #1F2C38;
+  padding-inline: 40rem;
+  padding-bottom: 7rem;
+  font-family: 'Playfair Display', sans-serif;
+}
+
+.areas-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 3rem;
+  gap: 3rem 6rem;
+}
+
+.areas-title {
+  font-size: 28px;
+  font-weight: 600;
+  text-align: center;
+  color: #FAFAFA;
+}
+
+.areas-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #FAFAFA;
+  height: 140px;
+  width: 220px;
+  color: #1F2C38;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 5px;
+}
+
+.areas-card:hover {
+  cursor: pointer;
+  background: #BFB6AD;
+}
+
+.areas-card img {
+  height: 70px;
+  width: 78px;
+  margin-bottom: 1rem;
+}
+
+.rodape {
+  height: 10rem;
+  padding: 2.5rem 5rem .5rem 5rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr auto;
+  width: 100%;
+  background: #96887B;
+  color: #1F2C38;
+  justify-items: center;
+  box-shadow: 0 -3px 15px #000;
+}
+
+.rodape-info h2 {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.rodape-info p {
+  margin-bottom: .7rem;
+}
+
+.rodape-info p:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.rodape-info a {
+  margin-bottom: .7rem;
+  color: #1F2C38;
+}
+
+.rodape-info a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.dev {
+  grid-column: 4;
+}
+
+.trademark {
+  grid-row: 2;
+  grid-column: span 4;
 }
